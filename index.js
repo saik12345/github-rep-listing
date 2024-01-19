@@ -96,7 +96,7 @@ async function userBio(){
     // document.getElementById("user-repo").style.visibility="visible";
     console.log(data);
     
-    if(res<400 && data.length!=0){
+    if(res.status<400 && data.length!=0){
         hide(false);
     const imgURL=data.avatar_url;
     const githubURL=data.html_url;
@@ -128,7 +128,7 @@ const res=await fetch(`${BASE_URL}/${userName}/repos?per_page=${repo_per_page}&p
 const data=await res.json();
 
 // console.log(data);
-if(res<400 && data.length!=0){
+if(res.status<400 && data.length!=0){
 for(var x in data){
     let repo=document.createElement('div');
     let repoTitle=document.createElement('h2');
