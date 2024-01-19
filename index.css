@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Press+Start+2P&family=Rubik+Doodle+Shadow&display=swap');
+/* font-family: 'Kanit', sans-serif;
+font-family: 'Press Start 2P', system-ui;
+font-family: 'Rubik Doodle Shadow', system-ui; */
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Kanit', sans-serif;
+}
+html{
+    background-color: rgb(0, 0, 255,0.3);
+}
+/* div{
+    /* width:100%; */
+    /* height:50px; */
+    /* border:1px solid red; */
+.search-bar{
+    padding:25px;
+}
+.search-bar p{
+    font-size:3.5rem;
+    font-family:'Rubik Doodle Shadow', system-ui;
+    font-weight: bold;
+}
+.search-bar input{
+    font-size: 1.2rem;
+    border:2px solid black;
+    /* box-shadow:5px 5px 5px black; */
+    padding:2px 5px;
+    transition: 0.3s ease-in;
+    margin-top:1.5rem;
+}
+.search-bar input:focus{
+    box-shadow:10px 5px 5px black;
+    font-size: 1.5rem;
+    transition:0.3s  ease-out;
+}
+.search-bar button{
+    font-size:1.2rem;
+    padding: 5px;
+    border-radius: 5px;
+}
+.search-bar button:hover{
+    background-color: black;
+    color:white;
+    
+    box-shadow:10px 5px 5px black;
+    transition:0.2s  ease-out;
+}
+#user-section{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+
+#user-section h3{
+    padding: 5% 5%;
+    margin-top: 2.5rem;
+}
+#user-section--image{
+    /* border:2px solid green; */
+    background-color: black;
+}
+#user-section--image img{
+    height:220px;
+    width:220px;
+    border-radius:50%;
+    display: block;
+    margin:0 auto;
+    
+}
+#user-section--image p a{
+    color:white;
+}
+#user-section--bio{
+    text-align: center;
+    }
+#user-section--bio h2,p{
+    
+    
+    padding:10px;
+    /* align-self: start; */
+}
+#user-section--bio h2{
+    font-size:2.5rem;
+}
+
+#repo{
+    width: 100%;
+    /* display: grid; */
+    /* border:1px solid yellow; */
+    /* grid-template-columns:1fr;
+    row-gap: 1em;
+    column-gap: 1em; */
+    /* padding:10px 10px; */
+    /* justify-content: space-evenly;
+    flex-wrap: wrap; */
+    /* overflow:hidden; */
+    
+}
+#repo div{
+    width:70%;
+    /* box-sizing: border-box; */
+    color:white;
+    border-radius: 12px;
+    align-self:start;
+    border:1px solid black;
+    background-color: #405cf5;
+    box-shadow:10px 5px 5px black;
+    margin:15px auto;
+    /* opacity: 0.7; */
+    /* position: relative; */
+}
+@media only screen and (max-width: 620px) {
+    #repo div{
+        width:90%;
+    }
+    #user-section{
+        display:grid;
+        grid-template-columns: 1fr;
+        
+    }
+}
+#repo div h2{
+    text-align:center;
+    font-family: 'Press Start 2P', system-ui;
+    font-weight:bold;
+    font-size:1.2rem;
+    padding: 10px;
+    margin-top:1.2rem;
+    /* border: 1px solid black; */
+}
+#repo div h5{
+    margin: 5px auto;
+    width:80%;
+    font-size: 1.2rem;
+    font-style: italic;
+    /* border:1px solid black; */
+}
+center{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+center span{
+    border:1px solid black;
+    padding:5px;
+    border-radius: 2rem;
+    margin-left:5px;
+    background-color:black ;
+    color:white;
+}
+
+center button{
+    height:30px;
+    border:1px solid blue;
+    color:blue;
+    padding:5px 10px;
+}
+center button:hover{
+    color:white;
+    background-color: #405cf5;
+transition: 0.4s ease;
+}
+.search-bar button,input{
+    margin:2px 3px;
+}
+#repo div div{
+    border:1px solid black;
+    /* display: flex; */
+    /* align-items: flex-end; */
+    /* flex-wrap: wrap;
+    gap:3px; */
+    margin-top: 10px;
+    text-align: center;
+    background-color: black;
+    
+}
+#repo div div button{
+    margin:5px 2px;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    background-color: black;
+    color:white;
+    border:2px solid white;
+    border-radius: 5px;;
+}
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    z-index: 999; /* Ensure it stays on top of other elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader:before {
+    content: "";
+    border: 16px solid #f3f3f3; /* Light gray border */
+    border-top: 16px solid #3498db; /* Blue color for the spinning part */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

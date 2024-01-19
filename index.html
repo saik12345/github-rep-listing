@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github User Search</title>
+    <!-- <script src="index.js"></script> -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="root">
+        <div class="search-bar">
+            <p>Search for users</p>
+            <input type="text" id="user-search">
+            <button id="search">Search</button>
+        </div>
+        <div id="user-section">
+            <div id="user-section--image"><img src="abc.jpg" alt="user-image" id="u_img"></img>
+            <p>link github</p>
+        </div>
+            <div id="user-section--bio">
+                <h2>User name</h2>
+                <p>bio</p>
+                <p>location</p>
+                <p>twitter</p>
+            </div>
+        </div>
+        <div id="user-repo">
+            <center>
+                <button id="prev">previous</button >
+                <button id="next">Next</button>
+                <span>Repos you want per page : 
+                <select name="options" id="repo_per_page">
+                    <option value="10">10</option>
+                    <option value="30">30</option>
+                    <option value="50">50</option>
+                    <option value="80">80</option>
+                    <option value="100">100</option>
+                </select>
+            </span>
+            <span>Page No : <span id="page_no" >1</span></span>
+                
+            </center>
+            <div id="repo">
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
